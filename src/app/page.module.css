@@ -1,17 +1,4 @@
-/* Paleta de colores cálida y minimalista para Caribe */
-:root {
-  --sage: #CDC392;
-  --alabaster: #E8E5DA;
-  --jordy-blue: #9EB7E5;
-  --cornflower-blue: #648DE5;
-  --yinmn-blue: #304C89;
-  --blanco: #FFFFFF;
-  --gris-claro: #F0F4F8;
-  --gris-oscuro: #4A4A4A;
-  --sombra: rgba(0, 0, 0, 0.08);
-  --gradiente-fondo: linear-gradient(135deg, #E8E5DA 0%, #CDC392 100%);
-  --gradiente-header: linear-gradient(0deg, rgba(48, 76, 137, 0.5) 0%, rgba(158, 183, 229, 0.3) 100%);
-}
+
 
 .page {
   min-height: 100vh;

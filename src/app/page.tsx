@@ -1,10 +1,10 @@
 'use client';
 
 import { useState, useEffect } from "react";
-import Image from "next/image";
 import { createClient } from '@supabase/supabase-js';
 import { PlusCircle, Calendar, Plane, Umbrella, CheckCircle2, CircleDashed, Sun, Palmtree, Package, Heart, Camera, Coffee, Utensils } from "lucide-react";
 import styles from "./page.module.css";
+import './globals.css';
 
 // Inicializar cliente de Supabase
 const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL || '';
@@ -29,11 +29,12 @@ const iconos = {
   sol: <Sun size={20} />,
   palmera: <Palmtree size={20} />,
   paquete: <Package size={20} />,
-  corazon: <Heart size={20} color={getComputedStyle(document.documentElement).getPropertyValue('--jordy-blue')}/>,
+  corazon: <Heart size={20} color="#9EB7E5" />, // Color fijo en lugar de usar getComputedStyle
   camara: <Camera size={20} />,
   cafe: <Coffee size={20} />,
   comida: <Utensils size={20} />
 };
+
 
 export default function Home() {
   const [tareas, setTareas] = useState<Tarea[]>([]);
