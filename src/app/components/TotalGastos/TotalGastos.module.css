@@ -1,0 +1,324 @@
+.gastosContainer {
+    background-color: var(--blanco);
+    border-radius: 12px;
+    box-shadow: 0 4px 12px var(--sombra);
+    margin-bottom: 20px;
+    overflow: hidden;
+  }
+  
+  .totalDisplay {
+    padding: 20px;
+    background: var(--gradiente-fondo);
+    color: var(--gris-oscuro);
+  }
+  
+  .monedaSelector {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+  }
+  
+  .monedaSelector button {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 6px;
+    background: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.2s;
+  }
+  
+  .monedaSelector button.active {
+    background: var(--cornflower-blue);
+    color: white;
+  }
+  
+  .totales {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .totalAmount {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.2rem;
+  }
+  
+  .personaTotales {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+  }
+  
+  .personaAmount {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+  }
+  
+  .personaAmount span {
+    font-size: 0.9rem;
+    color: var(--gris-oscuro);
+  }
+  
+  .balance {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    font-weight: 500;
+  }
+  
+  .gastosHeader {
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    border-bottom: 1px solid var(--gris-claro);
+  }
+  
+  .gastosHeader h2 {
+    margin: 0;
+    font-size: 1rem;
+    color: var(--gris-oscuro);
+  }
+  
+  .gastosContent {
+    padding: 20px;
+  }
+  
+  .nuevoGasto {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .nuevoGasto input,
+  .nuevoGasto select {
+    padding: 8px 12px;
+    border: 1px solid var(--gris-claro);
+    border-radius: 6px;
+    font-size: 0.9rem;
+  }
+  
+  .nuevoGasto input[type="text"] {
+    flex: 2;
+  }
+  
+  .nuevoGasto input[type="number"] {
+    flex: 1;
+  }
+  
+  .personaSelect {
+    min-width: 100px;
+  }
+  
+  .addButton {
+    background: var(--cornflower-blue);
+    border: none;
+    border-radius: 6px;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+  
+  .addButton:hover {
+    background: var(--jordy-blue);
+    transform: translateY(-1px);
+  }
+  
+  .gastosList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .gastoItem {
+    padding: 12px;
+    border-radius: 8px;
+    background: var(--gris-claro);
+    transition: all 0.2s;
+  }
+  
+  .personaFacu {
+    border-left: 4px solid var(--cornflower-blue);
+  }
+  
+  .personaCande {
+    border-left: 4px solid var(--sage);
+  }
+  
+  .gastoView {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  
+  .personaIcon {
+    color: var(--gris-oscuro);
+  }
+  
+  .concepto {
+    flex: 1;
+    font-weight: 500;
+  }
+  
+  .monto {
+    font-weight: 600;
+    color: var(--yinmn-blue);
+  }
+  
+  .actions {
+    display: flex;
+    gap: 8px;
+  }
+  
+  .actions button {
+    background: none;
+    border: none;
+    padding: 4px;
+    cursor: pointer;
+    color: var(--gris-oscuro);
+    transition: all 0.2s;
+  }
+  
+  .actions button:hover {
+    color: var(--cornflower-blue);
+  }
+  
+  .gastoEdit {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .gastoEdit input,
+  .gastoEdit select {
+    padding: 6px 10px;
+    border: 1px solid var(--gris-claro);
+    border-radius: 4px;
+    font-size: 0.9rem;
+  }
+  
+  .gastoEdit input[type="text"] {
+    flex: 2;
+  }
+  
+  .gastoEdit input[type="number"] {
+    flex: 1;
+  }
+  
+  .editActions {
+    display: flex;
+    gap: 6px;
+  }
+  
+  .editActions button {
+    background: none;
+    border: none;
+    padding: 4px;
+    cursor: pointer;
+    color: var(--gris-oscuro);
+    transition: all 0.2s;
+  }
+  
+  .editActions button:hover {
+    color: var(--cornflower-blue);
+  }
+
+  .cotizacionContainer {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+  }
+  
+  .cotizacionButton {
+    background: none;
+    border: none;
+    padding: 8px 12px;
+    font-size: 0.9rem;
+    color: var(--gris-oscuro);
+    cursor: pointer;
+    border-radius: 6px;
+    transition: all 0.2s;
+  }
+  
+  .cotizacionButton:hover {
+    background: rgba(255, 255, 255, 0.1);
+  }
+  
+  .cotizacionEdit {
+    padding: 4px;
+  }
+  
+  .cotizacionInput {
+    width: 80px;
+    padding: 6px 8px;
+    border: 1px solid var(--gris-claro);
+    border-radius: 4px;
+    font-size: 0.9rem;
+    text-align: right;
+  }
+  
+
+  
+  @media (max-width: 768px) {
+    .nuevoGasto {
+      flex-wrap: wrap;
+    }
+    
+    .nuevoGasto input[type="text"],
+    .nuevoGasto input[type="number"],
+    .nuevoGasto select {
+      flex: 1 1 calc(50% - 5px);
+    }
+    
+    .addButton {
+      flex: 0 0 100%;
+      height: 40px;
+    }
+    
+    .gastoView {
+      flex-wrap: wrap;
+    }
+    
+    .concepto {
+      flex: 0 0 100%;
+      margin-bottom: 5px;
+    }
+    
+    .monto {
+      flex: 1;
+    }
+
+    .monedaSelector {
+        flex-wrap: wrap;
+        gap: 8px;
+      }
+    
+      .cotizacionContainer {
+        width: 100%;
+        justify-content: center;
+        margin-top: 8px;
+      }
+    
+      .cotizacionButton,
+      .cotizacionInput {
+        width: 100%;
+        text-align: center;
+      }
+  }

@@ -5,6 +5,7 @@ import { createClient } from '@supabase/supabase-js';
 import { PlusCircle, Calendar, Plane, Umbrella, CheckCircle2, CircleDashed, Sun, Palmtree, Package, Heart, Camera, Coffee, Utensils } from "lucide-react";
 import styles from "./page.module.css";
 import './globals.css';
+import TotalGastos from "./components/TotalGastos/TotalGastos";
 
 // Inicializar cliente de Supabase
 const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL || '';
@@ -272,6 +273,8 @@ export default function Home() {
             ></div>
           </div>
         </div>
+
+        <TotalGastos /> 
 
         <div className={styles.addTaskSection}>
           {!agregandoTarea ? (
