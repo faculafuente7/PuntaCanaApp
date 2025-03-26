@@ -6,6 +6,7 @@ import { PlusCircle, Calendar, Plane, Umbrella, CheckCircle2, CircleDashed, Sun,
 import styles from "./page.module.css";
 import './globals.css';
 import TotalGastos from "./components/TotalGastos/TotalGastos";
+import Clima from "./components/Clima/Clima";
 
 // Inicializar cliente de Supabase
 const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL || '';
@@ -256,6 +257,8 @@ export default function Home() {
           </div>
         </div>
       </div>
+
+      <Clima/>
 
       <main className={styles.main}>
         <div className={styles.progressContainer}>
