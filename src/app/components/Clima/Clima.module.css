@@ -388,6 +388,63 @@
   color: #d32f2f;
 }
 
+.headerLeft {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.locationSelector {
+  display: flex;
+  gap: 5px;
+}
+
+.locationButton {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 6px 10px;
+  border: none;
+  background: transparent;
+  color: var(--gris-oscuro);
+  cursor: pointer;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  transition: all 0.2s ease;
+}
+
+.locationButton:hover {
+  background-color: rgba(100, 141, 229, 0.1);
+}
+
+.activeLocation {
+  background-color: var(--cornflower-blue);
+  color: white;
+  font-weight: 500;
+}
+
+.refreshButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  color: var(--jordy-blue);
+  transition: all 0.2s ease;
+}
+
+.refreshButton:hover {
+  background-color: rgba(100, 141, 229, 0.1);
+  transform: rotate(180deg);
+}
+
+
+
+
 @keyframes spin {
   to { transform: rotate(360deg); }
 }
@@ -405,5 +462,27 @@
   
   .mainTemp {
     font-size: 1.8rem;
+  }
+
+  .climaHeader {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  
+  .controls {
+    width: 100%;
+    justify-content: space-between;
+  }
+  
+  .daysRange {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .locationButton {
+    padding: 4px 8px;
+    font-size: 0.8rem;
   }
 }
